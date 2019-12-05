@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zuul" />
+        <module name="eureka-server" />
+        <module name="config-server" />
+        <module name="service-hello" />
+        <module name="service-feign" />
+        <module name="wxapplet" />
+        <module name="service-hi" />
+        <module name="config" />
+      </profile>
+      <profile name="Annotation profile for config-client" enabled="true">
+        <sourceOutputDir name="../../config-client/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../config-client/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="config" target="1.8" />
+      <module name="config-client" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="service-feign" target="1.8" />
+      <module name="service-hello" target="1.8" />
+      <module name="service-hi" target="1.8" />
+      <module name="wxapplet" target="1.8" />
+      <module name="zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config" options="-parameters" />
+      <module name="config-client" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="service-feign" options="-parameters" />
+      <module name="service-hello" options="-parameters" />
+      <module name="service-hi" options="-parameters" />
+      <module name="wxapplet" options="-parameters" />
+      <module name="zuul" options="-parameters" />
+    </option>
+  </component>
+</project>
